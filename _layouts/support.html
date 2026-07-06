@@ -1,0 +1,37 @@
+---
+layout: base
+---
+{% if page.faqs %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faqs %}{
+      "@type": "Question",
+      "name": {{ item.q | strip_html | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | markdownify | strip_html | strip_newlines | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
+</script>
+{% endif %}
+<main id="main-content" class="page-body">
+  <section class="section container">
+    <div class="support-hero">
+      {{ content }}
+    </div>
+    <div class="faq-list">
+      <h2 class="faq-list__heading">Frequently asked questions</h2>
+      {% for item in page.faqs %}
+      <details class="faq-item">
+        <summary>{{ item.q }}</summary>
+        {{ item.a | markdownify }}
+      </details>
+      {% endfor %}
+    </div>
+  </section>
+</main>

@@ -1,0 +1,24 @@
+---
+layout: base
+---
+<main id="main-content" class="legal-page">
+  <div class="container legal-page__inner">
+    <nav class="legal-toc" aria-label="On this page">
+      <h2>Contents</h2>
+      {% assign chunks = content | split: '<h2 id="' %}
+      {% for chunk in chunks offset: 1 %}
+        {% assign id = chunk | split: '"' | first %}
+        {% assign text = chunk | split: '</h2>' | first | split: '>' | last %}
+        {% unless id contains 'table-of-contents' %}
+          <a href="#{{ id }}">{{ text | strip_html }}</a>
+        {% endunless %}
+      {% endfor %}
+    </nav>
+    <article class="legal-content">
+      <div class="legal-notice">
+        <strong>Development notice:</strong> This document is a working draft. Bracketed <span class="legal-placeholder">[TODO]</span> placeholders must be completed and reviewed by qualified counsel before launch.
+      </div>
+      {{ content }}
+    </article>
+  </div>
+</main>

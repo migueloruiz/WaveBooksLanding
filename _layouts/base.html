@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} — Wave Books</title>
+  <meta name="description" content="{{ page.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta name="theme-color" content="#080a0b">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }} — Wave Books">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/brand/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }} — Wave Books">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/brand/og-image.png">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/app-icon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header site-header--on-light" data-site-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="/" aria-label="Wave Books home">
+        <img class="brand__symbol" src="assets/brand/app-icon-small.png" alt="" aria-hidden="true" width="30" height="30">
+        <span class="brand__wordmark">WAVE&nbsp;BOOKS</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="/#how-it-works">How it works</a></li>
+          <li><a href="privacy.html" {% if page.url == '/privacy.html' %}aria-current="page"{% endif %}>Privacy</a></li>
+          <li><a href="terms.html" {% if page.url == '/terms.html' %}aria-current="page"{% endif %}>Terms</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="app-store-badge header-cta" data-app-store-link href="https://apps.apple.com/app/idAPP_STORE_ID" target="_blank" rel="noopener"><img src="assets/brand/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-menu-toggle>
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+    <div class="container">
+      <nav aria-label="Mobile">
+        <ul>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="/#how-it-works">How it works</a></li>
+          <li><a href="privacy.html" {% if page.url == '/privacy.html' %}aria-current="page"{% endif %}>Privacy</a></li>
+          <li><a href="terms.html" {% if page.url == '/terms.html' %}aria-current="page"{% endif %}>Terms</a></li>
+          <li><a href="support.html" {% if page.url == '/support.html' %}aria-current="page"{% endif %}>Support</a></li>
+        </ul>
+      </nav>
+      <a class="app-store-badge" data-app-store-link href="https://apps.apple.com/app/idAPP_STORE_ID" target="_blank" rel="noopener"><img src="assets/brand/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
+    </div>
+  </div>
+
+  {{ content }}
+
+  {% include contact.html %}
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="brand" href="/" aria-label="Wave Books home">
+            <img class="brand__symbol" src="assets/brand/app-icon-small.png" alt="" aria-hidden="true" width="30" height="30">
+            <span class="brand__wordmark">WAVE&nbsp;BOOKS</span>
+          </a>
+          <p>Your personal audiobook library, offline.</p>
+          <p><a href="/">wavebooks.app</a></p>
+        </div>
+        <nav aria-labelledby="footer-product">
+          <h2 id="footer-product">Product</h2>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How it works</a></li>
+            <li><a data-app-store-link href="https://apps.apple.com/app/idAPP_STORE_ID" target="_blank" rel="noopener">App Store</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-legal">
+          <h2 id="footer-legal">Legal</h2>
+          <ul>
+            <li><a href="privacy.html" {% if page.url == '/privacy.html' %}aria-current="page"{% endif %}>Privacy Policy</a></li>
+            <li><a href="terms.html" {% if page.url == '/terms.html' %}aria-current="page"{% endif %}>Terms &amp; Conditions</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-help">
+          <h2 id="footer-help">Help</h2>
+          <ul>
+            <li><a href="support.html" {% if page.url == '/support.html' %}aria-current="page"{% endif %}>Support</a></li>
+            <li><a href="support.html#contact">Contact</a></li>
+            <li><a data-support-email href="mailto:wavebooks+privacy@proton.me">wavebooks+privacy@proton.me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; <span data-current-year>2026</span> Wave Books. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

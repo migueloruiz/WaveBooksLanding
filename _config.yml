@@ -1,0 +1,14 @@
+title: Wave Books
+url: "https://wavebooks.app"
+# Sources & tooling that must NOT be published:
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - ACTION-PLAN.md
+  - DEV_SERVER.md
+  - FULL-AUDIT-REPORT.md
+  - HUMAN_CHECKS.md
+  - screenshots/
+# pages/*.md carry their own `permalink`, so output lands at root.

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" fill="none" stroke-linecap="round">
+    <path d="M1200 300 Q980 150 760 300 T320 300" stroke-width="1.5" opacity="0.9"/>
+    <path d="M1200 300 Q960 120 720 300 T240 300" stroke-width="1.5" opacity="0.7"/>
+    <path d="M1200 300 Q940 90 680 300 T160 300" stroke-width="1.5" opacity="0.5"/>
+    <path d="M1200 300 Q1000 200 800 300 T400 300" stroke-width="1.5" opacity="0.8"/>
+    <path d="M1200 300 Q1020 240 840 300 T480 300" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M1120 260v80M1150 230v140M1085 240v120M1055 275v50M1180 250v100"/>
+  </g>
+</svg>

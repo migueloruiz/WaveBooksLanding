@@ -1,0 +1,27 @@
+{
+  "appStoreUrl": "https://apps.apple.com/app/idAPP_STORE_ID",
+  "supportEmail": "wavebooks+privacy@proton.me",
+  "siteUrl": "https://wavebooks.app/",
+  "domain": "wavebooks.app",
+  "features": {
+    "jellyfinComingSoon": true,
+    "audiobookShelfComingSoon": true
+  },
+  "sections": {
+    "featureCards": true,
+    "howItWorks": true,
+    "cta": true
+  },
+  "wave": {
+    "enabled": true,
+    "waves": 2,
+    "amplitude": 25,
+    "baseline": 52,
+    "speed": 1,
+    "dividers": {
+      "hero": { "waves": 2, "amplitude": 25, "baseline": 52, "speed": 1 },
+      "bandTop": { "waves": 3, "amplitude": 14, "baseline": 52, "speed": 1.2 },
+      "bandBottom": { "waves": 2, "amplitude": 25, "baseline": 48, "speed": 0.8 }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" fill="none" stroke-width="1.4" stroke-linecap="round">
+    <path d="M-20 120 Q200 70 420 120 T860 120 T1220 120" opacity="0.8"/>
+    <path d="M-20 140 Q200 95 420 140 T860 140 T1220 140" opacity="0.6"/>
+    <path d="M-20 100 Q200 55 420 100 T860 100 T1220 100" opacity="0.5"/>
+  </g>
+</svg>

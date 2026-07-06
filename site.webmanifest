@@ -1,0 +1,17 @@
+{
+  "name": "Wave Books",
+  "short_name": "Wave Books",
+  "description": "Your personal audiobook library, offline.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f2eb",
+  "theme_color": "#080a0b",
+  "icons": [
+    {
+      "src": "/assets/brand/app-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

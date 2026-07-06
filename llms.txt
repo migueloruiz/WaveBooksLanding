@@ -1,0 +1,30 @@
+# Wave Books
+
+> An offline audiobook player for iPhone. Import and listen to your own DRM-free audiobooks — no subscription, no account, no tracking. Your audiobooks stay on your device.
+
+Wave Books is a personal, offline-first audiobook library for iOS. It plays DRM-free
+M4B, M4A, and MP3 files you already own. Import from local Files, iCloud Drive, AirDrop,
+"Open In", or connect your own self-hosted server. Playback works fully offline once a
+book is on the device.
+
+## What it does
+- Plays DRM-free audiobooks (M4B / M4A / MP3). DRM-protected files are not supported.
+- Offline listening: import or download once, then listen with no network connection.
+- iCloud Drive discovery: import audiobook files you place in the Wave Books iCloud folder (it does not sync your whole library automatically).
+- Self-hosted servers: connect AudiobookShelf or Jellyfin and download supported audiobooks.
+- Player: adjustable speed, skip time, chapters, bookmarks, and AirPlay.
+
+## Privacy
+- No account required and no subscription.
+- No third-party ad networks and no cross-app tracking.
+- Crash and basic usage/performance data are collected via self-hosted software, kept on servers the developer runs, not shared with third parties, and never used for advertising.
+- A one-time purchase removes the app's own house ads.
+
+## Pages
+- Home: https://wavebooks.app/
+- Support / FAQ: https://wavebooks.app/support.html
+- Privacy Policy: https://wavebooks.app/privacy.html
+- Terms & Conditions: https://wavebooks.app/terms.html
+
+## Contact
+- Email: wavebooks+privacy@proton.me

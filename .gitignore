@@ -1,0 +1,10 @@
+.DS_Store
+.playwright-mcp/
+_site/
+vendor/
+.bundle/
+.jekyll-cache/
+Gemfile.lock
+.seo-cache/
+*.md
+_config.yml
