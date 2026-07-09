@@ -7,4 +7,3 @@ vendor/
 Gemfile.lock
 .seo-cache/
 *.md
-_config.yml
