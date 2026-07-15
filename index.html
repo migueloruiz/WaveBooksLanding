@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wave Books — Your personal audiobook library, offline</title>
-  <meta name="description" content="Import and listen to your DRM-free audiobooks offline on iPhone. Use local files, iCloud Drive, AudiobookShelf, or your own supported server.">
+  <title>Private Offline Audiobook Player for iPhone | Wave Books</title>
+  <meta name="description" content="Play DRM-free M4B, M4A, and MP3 audiobooks offline on iPhone with Wave Books. Import from Files, iCloud Drive, AirDrop, or external storage—no account.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://wavebooks.app/">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Wave Books guide for AI assistants">
   <meta name="theme-color" content="#080a0b">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Wave Books — Your personal audiobook library, offline">
-  <meta property="og:description" content="Import and listen to your DRM-free audiobooks offline on iPhone. Use local files, iCloud Drive, AudiobookShelf, or your own supported server.">
+  <meta property="og:site_name" content="Wave Books">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Private Offline Audiobook Player for iPhone | Wave Books">
+  <meta property="og:description" content="Play DRM-free M4B, M4A, and MP3 audiobooks offline on iPhone with Wave Books. Import from Files, iCloud Drive, AirDrop, or external storage—no account.">
   <meta property="og:url" content="https://wavebooks.app/">
-  <meta property="og:image" content="https://wavebooks.app/assets/brand/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wave Books — Your personal audiobook library, offline">
-  <meta name="twitter:description" content="Import and listen to your DRM-free audiobooks offline on iPhone.">
-  <meta name="twitter:image" content="https://wavebooks.app/assets/brand/og-image.png">
+  <meta property="og:image" content="https://wavebooks.app/assets/brand/app-icon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Wave Books offline audiobook player for iPhone">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Private Offline Audiobook Player for iPhone | Wave Books">
+  <meta name="twitter:description" content="Play DRM-free M4B, M4A, and MP3 audiobooks offline on iPhone with Wave Books—no subscription or account required.">
+  <meta name="twitter:image" content="https://wavebooks.app/assets/brand/app-icon.png">
+  <meta name="twitter:image:alt" content="Wave Books offline audiobook player for iPhone">
 
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/brand/app-icon-180.png">
@@ -32,18 +40,68 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Wave Books",
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "iOS",
-    "description": "A personal offline audiobook library for DRM-free audiobooks.",
-    "url": "https://wavebooks.app/",
-    "downloadUrl": "https://apps.apple.com/app/idAPP_STORE_ID",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://wavebooks.app/#organization",
+        "name": "Wave Books",
+        "url": "https://wavebooks.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wavebooks.app/assets/brand/app-icon-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "wavebooks+privacy@proton.me",
+          "url": "https://wavebooks.app/support.html"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://wavebooks.app/#website",
+        "url": "https://wavebooks.app/",
+        "name": "Wave Books",
+        "description": "Official website for the Wave Books offline audiobook player for iPhone.",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://wavebooks.app/#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://wavebooks.app/#app",
+        "name": "Wave Books",
+        "alternateName": "Wave Books Audiobook Player",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Audiobook player",
+        "operatingSystem": "iOS",
+        "availableOnDevice": "iPhone",
+        "description": "A private offline audiobook player for DRM-free M4B, M4A, and MP3 files on iPhone.",
+        "url": "https://wavebooks.app/",
+        "image": "https://wavebooks.app/assets/brand/app-icon-512.png",
+        "screenshot": [
+          "https://wavebooks.app/assets/screenshots/library.PNG",
+          "https://wavebooks.app/assets/screenshots/player.PNG",
+          "https://wavebooks.app/assets/screenshots/import.PNG"
+        ],
+        "featureList": [
+          "Offline playback",
+          "M4B, M4A, and MP3 audiobook support",
+          "Imports from Files, iCloud Drive, AirDrop, Open In, and external storage",
+          "Chapters, bookmarks, adjustable playback speed, skip controls, and AirPlay",
+          "No account or recurring subscription required"
+        ],
+        "softwareHelp": "https://wavebooks.app/support.html",
+        "privacyPolicy": "https://wavebooks.app/privacy.html",
+        "publisher": {
+          "@id": "https://wavebooks.app/#organization"
+        },
+        "mainEntityOfPage": "https://wavebooks.app/"
+      }
+    ]
   }
   </script>
 </head>
@@ -103,8 +161,8 @@
         <div class="hero__layout">
           <div class="hero__text">
             <span class="eyebrow hero__eyebrow">Offline. Private. Yours.</span>
-            <h1>Your personal<br>audiobook library,<br><em>offline.</em></h1>
-            <p class="hero__copy">Import your DRM-free audiobooks, listen anywhere, and connect your own servers. No subscription. No account. Your audiobooks stay yours.</p>
+            <h1>Your personal<br> audiobook library,<br> <em>offline.</em></h1>
+            <p class="hero__copy">Wave Books is a private offline audiobook player for iPhone. Import DRM-free M4B, M4A, and MP3 files, then listen anywhere without an account or recurring subscription.</p>
             <div class="hero__actions">
               <a class="app-store-badge" data-app-store-link href="https://apps.apple.com/app/idAPP_STORE_ID" target="_blank" rel="noopener"><img src="assets/brand/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
               <a class="button button--ghost" href="#features">
@@ -125,9 +183,18 @@
           </div>
 
           <div class="hero-devices">
-            <img class="phone-mockup hero-device hero-device--library" src="assets/screenshots/library.PNG" alt="Wave Books Library screen showing a personal collection of audiobooks with cover art and remaining listening time." width="375" height="812" loading="eager" fetchpriority="high">
-            <img class="phone-mockup hero-device hero-device--player" src="assets/screenshots/player.PNG" alt="Wave Books Now Playing screen with chapter title, progress scrubber, and playback controls." width="375" height="812" loading="lazy">
-            <img class="phone-mockup hero-device hero-device--import" src="assets/screenshots/import.PNG" alt="Wave Books Import screen listing sources such as Files, iCloud Drive, AirDrop, and self-hosted servers." width="375" height="812" loading="lazy">
+            <div class="phone hero-device hero-device--library">
+              <img class="phone__shot" src="assets/screenshots/library.PNG" alt="Wave Books Library screen showing a personal collection of audiobooks with cover art and remaining listening time." loading="eager" fetchpriority="high">
+              <img class="phone__frame" src="assets/screenshots/device.png" alt="" aria-hidden="true" width="375" height="765">
+            </div>
+            <div class="phone hero-device hero-device--player">
+              <img class="phone__shot" src="assets/screenshots/player.PNG" alt="Wave Books Now Playing screen with chapter title, progress scrubber, and playback controls." loading="lazy">
+              <img class="phone__frame" src="assets/screenshots/device.png" alt="" aria-hidden="true" width="375" height="765">
+            </div>
+            <div class="phone hero-device hero-device--import">
+              <img class="phone__shot" src="assets/screenshots/import.PNG" alt="Wave Books Import screen listing sources such as Files, iCloud Drive, AirDrop, and self-hosted servers." loading="lazy">
+              <img class="phone__frame" src="assets/screenshots/device.png" alt="" aria-hidden="true" width="375" height="765">
+            </div>
           </div>
         </div>
       </div>
@@ -136,11 +203,46 @@
       </div>
     </section>
 
+    <!-- Search- and AI-friendly product summary -->
+    <section class="product-intro section band-blush" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="product-intro__head reveal">
+          <span class="eyebrow">Offline audiobook player for iPhone</span>
+          <h2 class="section-heading" id="about-heading">What is Wave Books?</h2>
+          <div class="product-intro__copy">
+            <p><strong>Wave Books is a private, offline-first audiobook player for iPhone, built for DRM-free audiobook files you already own.</strong> It turns M4B, M4A, and MP3 files into an organized personal library with cover art, chapters, bookmarks, and playback progress. Import from Files, iCloud Drive, AirDrop, Open In, or external storage, then listen without an internet connection, mobile data, or Wi-Fi.</p>
+            <p>Wave Books does not unlock or remove DRM from protected audiobooks. It is designed for compatible files you can legally copy to your device. No Wave Books account or recurring subscription is required, and support for AudiobookShelf and Jellyfin self-hosted servers is coming soon.</p>
+          </div>
+        </div>
+        <div class="integration-grid product-intro__grid">
+          <article class="integration-card reveal">
+            <h3>Which audiobook formats work?</h3>
+            <p>Wave Books supports DRM-free M4B, M4A, and MP3 audiobook files. DRM-protected files are not supported.</p>
+          </article>
+          <article class="integration-card reveal">
+            <h3>Can you listen without internet?</h3>
+            <p>Yes. Import or download a compatible audiobook once, then play it offline wherever you go.</p>
+          </article>
+          <article class="integration-card reveal">
+            <h3>Is an account or subscription required?</h3>
+            <p>No. Your personal library works without a Wave Books account or a recurring subscription.</p>
+          </article>
+          <article class="integration-card reveal">
+            <h3>Are self-hosted servers supported?</h3>
+            <p>AudiobookShelf and Jellyfin connections are coming soon. Local Files, AirDrop, external storage, and iCloud Drive imports are available now.</p>
+          </article>
+        </div>
+      </div>
+      <div class="wave-divider wave-divider--band-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" focusable="false"><path d="M0,64 C180,100 400,22 720,48 C1040,74 1260,28 1440,58 L1440,101 L0,101 Z"/></svg>
+      </div>
+    </section>
+
     <!-- Workflow + Integrations -->
     <section class="workflow-section section" id="how-it-works" aria-labelledby="how-heading" data-section="howItWorks">
       <div class="container">
         <div class="workflow-section__head reveal">
-          <h2 class="section-heading" id="how-heading">From anywhere to your library.</h2>
+          <h2 class="section-heading" id="how-heading">How does Wave Books work?</h2>
         </div>
         <div class="workflow-section__grid">
         <div class="workflow reveal">
@@ -195,8 +297,8 @@
                   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .002C8.826.002-1.398 18.537.16 21.666c1.56 3.129 22.14 3.094 23.682 0C25.384 18.573 15.177 0 12 0zm7.76 18.949c-1.008 2.028-14.493 2.05-15.514 0C3.224 16.9 9.92 4.755 12.003 4.755c2.081 0 8.77 12.166 7.759 14.196zM12 9.198c-1.054 0-4.446 6.15-3.93 7.189.518 1.04 7.348 1.027 7.86 0 .511-1.027-2.874-7.19-3.93-7.19z"/></svg>
                 </span>
               </div>
-              <h3>Jellyfin</h3>
-              <p>Connect to your own server and download supported audiobooks.</p>
+              <h3>Jellyfin <span class="badge-soon">Coming soon</span></h3>
+              <p>Planned support will let you connect to your own server and download compatible audiobooks.</p>
             </article>
             <article class="integration-card" data-audiobookshelf-feature>
               <div class="integration-card__head">
@@ -204,8 +306,8 @@
                   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0Zm-.023.402A11.598 11.598 0 0 1 23.575 12a11.598 11.598 0 0 1-11.598 11.598A11.598 11.598 0 0 1 .378 12 11.598 11.598 0 0 1 11.977.402Zm0 1.776a7.093 7.093 0 0 0-7.092 7.093v1.536a6.395 6.395 0 0 0-.439.33.35.35 0 0 0-.126.27v1.84a.36.36 0 0 0 .126.272c.22.182.722.564 1.504.956v.179c0 .483.31.873.694.873.384 0 .694-.392.694-.873v-4.415c0-.483-.31-.873-.694-.873-.369 0-.67.359-.694.812h-.002v-.91a6.027 6.027 0 1 1 12.054.003v.91c-.025-.454-.326-.813-.695-.813-.384 0-.694.391-.694.873v4.415c0 .483.31.873.694.873.384 0 .695-.392.695-.873v-.179a7.964 7.964 0 0 0 1.503-.956.35.35 0 0 0 .126-.272v-1.843a.342.342 0 0 0-.124-.27 5.932 5.932 0 0 0-.438-.329V9.271a7.093 7.093 0 0 0-7.092-7.093zm-3.34 5.548a.84.84 0 0 0-.84.84v9.405c0 .464.376.84.84.84h.866a.84.84 0 0 0 .84-.84V8.566a.84.84 0 0 0-.84-.84Zm2.905 0a.84.84 0 0 0-.84.84v9.405c0 .464.377.84.84.84h.867a.84.84 0 0 0 .84-.84V8.566a.84.84 0 0 0-.84-.84zm2.908 0a.84.84 0 0 0-.84.84v9.405c0 .464.376.84.84.84h.867a.84.84 0 0 0 .84-.84V8.566a.84.84 0 0 0-.84-.84zM8.112 9.983h1.915v.2H8.112Zm2.906 0h1.915v.2h-1.915Zm2.908 0h1.915v.2h-1.915zm-7.58 9.119a.633.633 0 0 0 0 1.265h11.26a.632.632 0 0 0 0-1.265z"/></svg>
                 </span>
               </div>
-              <h3>AudiobookShelf</h3>
-              <p>Browse your self-hosted collection and download books to your local library.</p>
+              <h3>AudiobookShelf <span class="badge-soon">Coming soon</span></h3>
+              <p>Planned support will let you browse a self-hosted collection and download books to your local library.</p>
             </article>
           </div>
         </div>
@@ -226,7 +328,7 @@
       </div>
       <div class="container">
         <div class="feature-cards__head reveal">
-          <h2 class="section-heading" id="listening-heading">Only what you really need for listening.</h2>
+          <h2 class="section-heading" id="listening-heading">What can you do with Wave Books?</h2>
         </div>
         <div class="feature-cards__grid">
           <article class="feature-card reveal">
@@ -236,7 +338,10 @@
             <h3>Import your books</h3>
             <p>Bring in DRM-free audiobooks from Files, iCloud Drive, AirDrop, Open In, or your self-hosted server.</p>
             <div class="feature-card__shot">
-              <img src="assets/screenshots/import.PNG" alt="Import screen listing available audiobook sources." width="375" height="812" loading="lazy">
+              <div class="phone">
+                <img class="phone__shot" src="assets/screenshots/import.PNG" alt="Import screen listing available audiobook sources." loading="lazy">
+                <img class="phone__frame" src="assets/screenshots/device.png" alt="" aria-hidden="true" width="375" height="765">
+              </div>
             </div>
           </article>
           <article class="feature-card reveal">
@@ -246,7 +351,10 @@
             <h3>Organize your library</h3>
             <p>Keep your personal collection searchable, clear, and easy to resume.</p>
             <div class="feature-card__shot">
-              <img src="assets/screenshots/library.PNG" alt="Library screen showing organized audiobook covers." width="375" height="812" loading="lazy">
+              <div class="phone">
+                <img class="phone__shot" src="assets/screenshots/library.PNG" alt="Library screen showing organized audiobook covers." loading="lazy">
+                <img class="phone__frame" src="assets/screenshots/device.png" alt="" aria-hidden="true" width="375" height="765">
+              </div>
             </div>
           </article>
           <article class="feature-card reveal">
@@ -256,7 +364,10 @@
             <h3>Listen anywhere</h3>
             <p>Download once, listen offline. Your progress syncs across devices, so you pick up right where you left off.</p>
             <div class="feature-card__shot">
-              <img src="assets/screenshots/player.PNG" alt="Now Playing screen with playback controls." width="375" height="812" loading="lazy">
+              <div class="phone">
+                <img class="phone__shot" src="assets/screenshots/player.PNG" alt="Now Playing screen with playback controls." loading="lazy">
+                <img class="phone__frame" src="assets/screenshots/device.png" alt="" aria-hidden="true" width="375" height="765">
+              </div>
             </div>
           </article>
           <article class="feature-card reveal">
@@ -266,7 +377,10 @@
             <h3>Personalized playback controls</h3>
             <p>Adjust speed, skip time, chapters, bookmarks, and AirPlay without clutter.</p>
             <div class="feature-card__shot">
-              <img src="assets/screenshots/settings.PNG" alt="Playback controls screen." width="375" height="812" loading="lazy">
+              <div class="phone">
+                <img class="phone__shot" src="assets/screenshots/settings.PNG" alt="Playback controls screen." loading="lazy">
+                <img class="phone__frame" src="assets/screenshots/device.png" alt="" aria-hidden="true" width="375" height="765">
+              </div>
             </div>
           </article>
         </div>
