@@ -21,10 +21,10 @@ device. AudiobookShelf and Jellyfin server connections are coming soon.
 - A one-time purchase removes the app's own house ads.
 
 ## Pages
-- Home: https://wavebooks.app/
-- Support / FAQ: https://wavebooks.app/support.html
-- Privacy Policy: https://wavebooks.app/privacy.html
-- Terms & Conditions: https://wavebooks.app/terms.html
+- Home: https://www.wavebooks.app/
+- Support / FAQ: https://www.wavebooks.app/support.html
+- Privacy Policy: https://www.wavebooks.app/privacy.html
+- Terms & Conditions: https://www.wavebooks.app/terms.html
 
 ## Contact
 - Email: wavebooks+privacy@proton.me

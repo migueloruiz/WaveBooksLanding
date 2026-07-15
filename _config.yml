@@ -1,5 +1,5 @@
 title: Wave Books
-url: "https://wavebooks.app"
+url: "https://www.wavebooks.app"
 # Sources & tooling that must NOT be published:
 exclude:
   - README.md

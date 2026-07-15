@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wavebooks.app/sitemap.xml
+Sitemap: https://www.wavebooks.app/sitemap.xml
