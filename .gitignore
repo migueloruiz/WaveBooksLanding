@@ -7,3 +7,4 @@ vendor/
 Gemfile.lock
 .seo-cache/
 *.md
+AppStoreAssetsGenerator
